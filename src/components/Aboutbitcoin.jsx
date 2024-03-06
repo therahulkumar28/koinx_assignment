@@ -34,19 +34,20 @@ const AboutBitcoin = () => {
       <p className="font-bold text-lg mb-4">
         Already Holding Bitcoin?
       </p>
-      <div className='flex justify-around'>
+      <div className='flex flex-col md:flex-row justify-between p-2 m-2'>
         <Bitcoin
           image={bitcoinimage1}
           title="Calculate your Profits"
           buttonName="Check Now->"
-          backgroundColor="bg-gradient-to-r from-blue-500 to-blue-700"
+          backgroundColor="bg-gradient-to-br from-[#79F1A4] to-[#0E5CAD]"
+
         />
 
         <Bitcoin
           image={bitcoinimage2}
           title="Calculate your tax liability"
           buttonName="Check Now->"
-          backgroundColor="bg-gradient-to-r from-orange-500 to-orange-700"
+          backgroundColor={`bg-gradient-to-r from-orange-400 to-orange-700`}
         />
 
       </div>
@@ -59,19 +60,18 @@ const AboutBitcoin = () => {
 };
 
 const Bitcoin = ({ image, title, buttonName, backgroundColor }) => {
-  const containerStyle = `flex items-center p-4 rounded-md shadow-md bg-${backgroundColor} w-94 h-48`;
-
   return (
-    <div className={containerStyle}>
-      <div className="mr-4">
-        <img src={image} alt="Bitcoin" className="w-28 h-28 object-cover rounded-md" />
+    <div className={`flex p-4 m-2 rounded-md shadow-md ${backgroundColor} w-94`}>
+      <div className="m-4">
+        <img src={image} alt="Bitcoin" className="w-28 h-36 object-cover rounded-md" />
       </div>
-      <div>
-        <h2 className="text-xl font-semibold mb-2">{title}</h2>
-        <button className="bg-white text-black px-4 py-2 rounded-md">{buttonName}</button>
+      <div className="flex flex-col justify-center">
+        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+        <button className="bg-white text-black mt-2 px-4 py-2 rounded-md">{buttonName}</button>
       </div>
     </div>
   );
 };
+
 
 export default AboutBitcoin;

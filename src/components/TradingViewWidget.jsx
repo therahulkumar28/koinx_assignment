@@ -11,7 +11,7 @@ function TradingViewWidget() {
     script.innerHTML = `
       {
         "autosize": true,
-        "symbol": "NASDAQ:AAPL",
+        "symbol": "Crypto:BTCUSD",
         "interval": "D",
         "timezone": "Etc/UTC",
         "theme": "light",
@@ -32,8 +32,8 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container bg-white rounded shadow-md p-4">
-      <div className="tradingview-widget-header text-lg font-semibold mb-4">Stock Chart</div>
+    <div className="">
+
       <div className="tradingview-widget" ref={container} style={{ height: "400px", width: "100%" }}></div>
       <div className="tradingview-widget-copyright mt-4">
         <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
