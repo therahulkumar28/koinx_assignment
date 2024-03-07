@@ -8,8 +8,8 @@ import Dashboard from "./components/Dashboard";
 import Tokeniomics from "./components/Tokeniomics";
 import Sentiments from "./components/Sentiments ";
 import PerformanceComponent from "./components/Performance";
-import Tradingviewwidgetdashboard from "./components/Tradingviewwidgetdashboard"
 import LastComponent from "./components/Lastcomponent";
+import BitcoinGraph from "./components/BitcoinGraph";
 function App() {
   return (
     <div >
@@ -21,8 +21,8 @@ function App() {
 
 
             <Currencies />
+            <BitcoinGraph />
             <Dashboard />
-            <Tradingviewwidgetdashboard />
             <PerformanceComponent/>
             <Sentiments />
             <AboutBitcoin />

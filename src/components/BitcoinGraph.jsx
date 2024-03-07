@@ -3,7 +3,7 @@ import axios from "axios";
 import TradingViewWidget from "./TradingViewWidget";
 import img from "../images/bitcoin.jpg";
 
-function TradingViewWidgetdashboard() {
+function BitcoinGraph() {
   const [cryptoData, setCryptoData] = useState(null);
   const [selectedInterval, setSelectedInterval] = useState('7D');
 
@@ -25,7 +25,7 @@ function TradingViewWidgetdashboard() {
 
     fetchData();
 
-    const intervalId = setInterval(fetchData, 1000);
+    const intervalId = setInterval(fetchData, 10000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -54,16 +54,16 @@ function TradingViewWidgetdashboard() {
           </div>
         </div>
         <div
-          className={`flex items-center justify-center rounded-lg p-2 h-10 ml-10 ${cryptoData && cryptoData.inr_24h_change < 0
-              ? "bg-red-300/20"
-              : "bg-green-300/20"
+          className={`flex items-center justify-center rounded-lg p-2 h-8 ml-10 mt-2 ${cryptoData && cryptoData.inr_24h_change < 0
+            ? "bg-red-300/20"
+            : "bg-[#EBF9F4]"
             }`}
         >
           <svg
             viewBox="0 0 100 100"
             className={`w-4 fill-current ${cryptoData && cryptoData.inr_24h_change < 0
                 ? "text-red-600 rotate-180"
-                : "text-green-600"
+                : "text-[#14B079]"
               }`}
           >
             <polygon points="0,100 50,0 100,100" />
@@ -71,7 +71,7 @@ function TradingViewWidgetdashboard() {
           <span
             className={`ml-2 text-sm font-bold ${cryptoData && cryptoData.inr_24h_change < 0
                 ? "text-red-600"
-                : "text-green-600"
+                : "text-[#14B079]"
               }`}
           >
             {(cryptoData &&
@@ -105,4 +105,4 @@ function TradingViewWidgetdashboard() {
   );
 }
 
-export default TradingViewWidgetdashboard;
+export default BitcoinGraph;

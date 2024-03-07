@@ -32,9 +32,9 @@ function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="">
+    <div >
 
-      <div className="tradingview-widget" ref={container} style={{ height: "400px", width: "100%" }}></div>
+      <div className="w-[100%] h-[280px]  lg:h-[365px]" ref={container} ></div>
       <div className="tradingview-widget-copyright mt-4">
         <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
           <span className="text-blue-500">Track all markets on TradingView</span>

@@ -10,7 +10,7 @@ const Sentiments = () => {
             <div className="flex font-semibold text-items-center mt-4">
                 Key Events <img className="w-4 h-4 m-1.5" src={icon} alt="icon" />
             </div>
-            <div className="flex flex-col justify-between sm:flex-row">
+            <div className="flex flex-col justify-between lg:flex-row">
                 <Cart
                     icon={c1}
                     title="Your title Here"
@@ -63,15 +63,17 @@ const Sentiments = () => {
 
 const Cart = ({ icon, title, description, bgColor, imgColor }) => {
     return (
-        <div className={`mt-4 p-4 w-96 h-70 flex   rounded-lg ${bgColor}`}>
-            <img
-                className={`w-8 h-8 m-2 rounded-full ${imgColor}`}
-                src={icon}
-                alt="icon"
-            />
-            <div className="ml-2 text-left">
-                <div className="font-semibold">{title}</div>
-                <div className="text-gray-600">{description}</div>
+        <div className={`mt-4 m-2 lg:m-2 p-[18px] w-[400px] h-[220px]  flex flex-col rounded-[12px] ${bgColor}`}>
+           <div className={`w-[50px] h-[50px] m-2 rounded-full  ${imgColor}`}> 
+           <img
+           className={`w-[28px] h-[28px] m-2 `}
+           src={icon}
+           alt="icon"
+       />
+           </div>
+            <div className="ml-2  w-[300px]  flex  flex-col overflow-hidden text-left">
+                <div className=" w-[300px] h-[40px] text-[14px] line-height-[20px]  font-semibold">{title}</div>
+                <div className="text-[#3E5765] mb-2">{description}</div>
             </div>
         </div>
     );

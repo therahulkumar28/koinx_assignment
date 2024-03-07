@@ -34,11 +34,11 @@ const AboutBitcoin = () => {
       <p className="font-bold text-lg mb-4">
         Already Holding Bitcoin?
       </p>
-      <div className='flex flex-col md:flex-row justify-between p-2 m-2'>
+      <div className='flex flex-col m-0 md:flex-row justify-between p-2 md:m-2'>
         <Bitcoin
           image={bitcoinimage1}
           title="Calculate your Profits"
-          buttonName="Check Now->"
+          buttonName="Check Now ->"
           backgroundColor="bg-gradient-to-br from-[#79F1A4] to-[#0E5CAD]"
 
         />
@@ -46,8 +46,8 @@ const AboutBitcoin = () => {
         <Bitcoin
           image={bitcoinimage2}
           title="Calculate your tax liability"
-          buttonName="Check Now->"
-          backgroundColor={`bg-gradient-to-r from-orange-400 to-orange-700`}
+          buttonName="Check Now ->"
+          backgroundColor="bg-gradient-to-br from-[#FF9865] to-[#EF3031]"
         />
 
       </div>
@@ -61,13 +61,13 @@ const AboutBitcoin = () => {
 
 const Bitcoin = ({ image, title, buttonName, backgroundColor }) => {
   return (
-    <div className={`flex p-4 m-2 rounded-md shadow-md ${backgroundColor} w-94`}>
-      <div className="m-4">
-        <img src={image} alt="Bitcoin" className="w-28 h-36 object-cover rounded-md" />
+    <div className={`flex justify-center items-center mb-3 md:m-2 rounded-md shadow-md ${backgroundColor} w-[410px] h-[155px] mr-2 relative`}>
+      <div className="w-full h-full">
+        <img src={image} alt="Bitcoin" className="w-[110px] h-[115px] absolute top-[16px] left-[10px] object-cover rounded-md" />
       </div>
-      <div className="flex flex-col justify-center">
-        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-        <button className="bg-white text-black mt-2 px-4 py-2 rounded-md">{buttonName}</button>
+      <div className="flex flex-col justify-center items-center w-[180px] h-[104px] absolute top-[20px] left-[167px] gap-[16px]">
+        <h2 className="text-2xl font-semibold  text-left mb-1">{title}</h2>
+        <button className="bg-white lg:w-[120px] h-[32px] rounded-[8px] gap-[4px] p-1 font-semibold">{buttonName}</button>
       </div>
     </div>
   );

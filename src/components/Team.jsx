@@ -39,7 +39,7 @@ const TeamPage = () => {
 export default TeamPage;
 
 const Team = ({ image, name, designation, description }) => (
-    <div className="flex  justify-between p-4 m-6 bg-blue-50  rounded-md shadow-md">
+    <div className="flex  flex-col items-center sm:flex-row sm:items-start  justify-between p-4 m-6 bg-blue-50  rounded-md shadow-md">
         <div className="flex mr-2 flex-col justify-center items-center w-32">
             <img src={image} alt="image..."  className="w-24 object-cover rounded-md" />
             
@@ -49,7 +49,7 @@ const Team = ({ image, name, designation, description }) => (
         </div>
 
 
-        <p className="ml-4   text-left">{description}</p>
+        <p className="ml-4  text-center  sm:text-left">{description}</p>
 
 
     </div>

@@ -15,20 +15,22 @@ function PerformanceComponent() {
                                 46,930.22
                             </div>
                         </div>
-                        <div className="w-[500px] h-2">
-                            <div className="bg-gradient-to-r from-red-500 via-orange-500 to-green-500 h-full rounded-2xl mt-7"></div>
-                            <div className="relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-4">
-                                <svg
-                                    viewBox="0 0 100 100"
-                                    className="w-3 fill-current text-black ml-7"
-                                >
-                                    <polygon points="0,100 50,0 100,100" />
-                                </svg>
-                                <span className="text-[#44475B] text-sm font-normal">
-                                    $47,137.83
-                                </span>
+                        <div className="w-[500px] h-2 relative">
+                            <div className="bg-gradient-to-r from-[#FF4949] via-[#FFAF11] to-[#11EB68] h-full rounded-2xl mt-7 relative">
+                                <div className="absolute top-8 right-2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <svg
+                                        viewBox="0 0 100 100"
+                                        className="w-3 fill-current text-black"
+                                    >
+                                        <polygon points="0,100 50,0 100,100" />
+                                    </svg>
+                                    <span className="text-[#44475B] text-sm font-normal ml-1">
+                                        $48,637.83
+                                    </span>
+                                </div>
                             </div>
                         </div>
+
                         <div className="text-end">
                             <div className="text-sm text-[#44475B] font-normal p-1 ">
                                 Today's High
@@ -48,7 +50,7 @@ function PerformanceComponent() {
                             </div>
                         </div>
                         <div className="w-[500px] h-2">
-                            <div className="bg-gradient-to-r from-red-500 via-orange-500 to-green-500 h-full rounded-2xl mt-7"></div>
+                            <div className="bg-gradient-to-r from-[#FF4949] via-[#FFAF11] to-[#11EB68] h-full rounded-2xl mt-7"></div>
                         </div>
                         <div className="text-end">
                             <div className="text-sm text-[#44475B] font-normal p-1">
@@ -62,15 +64,15 @@ function PerformanceComponent() {
                 </div>
             </div>
             <div className="flex  sm:flex-row items-center">
-            <div className="text-[#44475B] font-semibold text-xl">
-                Fundamentals
+                <div className="text-[#44475B] font-semibold text-xl">
+                    Fundamentals
+                </div>
+                <img src={icon} className="p-2 m-1 rounded-full " />
             </div>
-            <img src={icon} className="p-2 m-1 rounded-full " />
-        </div>
             <div className="flex flex-col  sm:flex-row justify-between mb-8">
                 <div className=" sm:w-1/2 sm:mr-10 mt-3  ">
-                <div>
-                </div>
+                    <div>
+                    </div>
                     <div className="flex justify-between py-5 border-b-2 border-[#D3E0E6]">
                         <div className="text-[#768396] text-sm font-semibold">
                             Bitcoin Price
