@@ -1,8 +1,24 @@
-# React + Vite
+KoinX Frontend Intern Assignment
+Overview
+This project is the implementation of the Frontend Intern Assignment for KoinX. The objective is to convert a Figma design into a functional React.js or Next.js application, integrating Coingecko's API and TradingView charts.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have completed in React js 
 
-Currently, two official plugins are available:
+Demo
+Check out the live demo https://koinx-amber.vercel.app/.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Getting Started
+Prerequisites
+Node.js and npm installed
+GitHub account
+
+Installation
+Clone the repository:
+
+bash
+git clone https://github.com/your-username/koinx-frontend-intern-assignment.git
+Install dependencies:
+
+bash
+cd koinx-frontend-intern-assignment
+npm install
