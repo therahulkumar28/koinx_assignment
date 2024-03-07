@@ -84,7 +84,7 @@ const Appbar = () => {
             alt="Crypto Taxes Logo"
             className="h-6 w-auto mr-2"
           />
-          <span className="absolute bottom-3 left-24z text-gray-500 text-xs font-bold">
+          <span className="absolute bottom-3 left-24 text-gray-500 text-xs font-bold">
             TM
           </span>
         </div>
