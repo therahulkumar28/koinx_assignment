@@ -57,9 +57,7 @@ koinx-frontend-intern-assignment/
 |-- src/
 |   |-- components/
 |   |-- pages/
-|   |-- services/
-|   |-- styles/
-|   |-- utils/
+|   |-- assets/
 |-- .env.example
 |-- .gitignore
 |-- package.json
