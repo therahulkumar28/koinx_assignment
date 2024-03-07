@@ -17,7 +17,7 @@ function PerformanceComponent() {
                         </div>
                         <div className="w-[500px] h-2 relative">
                             <div className="bg-gradient-to-r from-[#FF4949] via-[#FFAF11] to-[#11EB68] h-full rounded-2xl mt-7 relative">
-                                <div className="absolute top-8 right-2 transform -translate-x-1/2 -translate-y-1/2">
+                                <div className="absolute left-full top-8 sm:left-full  transform -translate-x-1/2 -translate-y-1/2">
                                     <svg
                                         viewBox="0 0 100 100"
                                         className="w-3 fill-current text-black"
@@ -70,7 +70,7 @@ function PerformanceComponent() {
                 <img src={icon} className="p-2 m-1 rounded-full " />
             </div>
             <div className="flex flex-col  sm:flex-row justify-between mb-8">
-                <div className=" sm:w-1/2 sm:mr-10 mt-3  ">
+                <div className=" sm:w-1/2  mt-3  ">
                     <div>
                     </div>
                     <div className="flex justify-between py-5 border-b-2 border-[#D3E0E6]">
@@ -83,10 +83,10 @@ function PerformanceComponent() {
                     </div>
                     <div className="flex justify-between py-5 border-b-2 border-[#D3E0E6]">
                         <div className="text-[#768396] text-sm font-semibold">
-                            24h Low / 24h High{" "}
+                            24h Low / 24h High
                         </div>
                         <div className="text-[#111827] text-sm font-semibold mr-4">
-                            $16,382.07 / $16,874.12
+                            $16,382.07/$16,874.12
                         </div>
                     </div>
                     <div className="flex justify-between py-5 border-b-2 border-[#D3E0E6]">

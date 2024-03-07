@@ -2,15 +2,17 @@ import icon from '../assets/i.png';
 import c1 from '../assets/c1.png';
 import c2 from '../assets/c2.png';
 import { useState } from 'react';
+
 const Sentiments = () => {
-    const [circleValue, setCircleValue] = useState(76)
+    const [circleValue, setCircleValue] = useState(76);
+
     return (
-        <div className="mt-8 bg-white rounded-md p-10 flex flex-col">
+        <div className="mt-8 bg-white rounded-md p-10 flex flex-col ">
             <h1 className="text-xl font-bold">Sentiment</h1>
             <div className="flex font-semibold text-items-center mt-4">
                 Key Events <img className="w-4 h-4 m-1.5" src={icon} alt="icon" />
             </div>
-            <div className="flex flex-col justify-between lg:flex-row">
+            <div className="flex m-2 p-2 overflow-x-auto space-x-2">
                 <Cart
                     icon={c1}
                     title="Your title Here"
@@ -29,31 +31,29 @@ const Sentiments = () => {
             <div>
                 <div className="flex items-center font-semibold mt-4">
                     Analyst Estimates
-                    <img className="w-4 h-4 m-1.5" src={icon} alt="icon" />
+                    <img  className="w-4 h-4 m-1.5" src={icon} alt="icon" />
                 </div>
-                <div className="flex items-center">
-                    <div className="w-24 h-24 p-8 m-4 rounded-full bg-green-100 flex items-center justify-center relative" >
+                <div className="flex  items-center">
+                    <div className="w-8 h-8 sm:w-24 sm:h-24 p-8 mr-2 sm:m-4  rounded-full bg-green-100 flex items-center justify-center relative">
                         <span className="text-lg text-green-600 font-bold">{circleValue}%</span>
                     </div>
-                    <div className="flex flex-col overflow-hidden">
-                        <div className="flex items-center">
-                            <span className="text-gray-400   m-4 rounded-sm">Buy</span>
-                            <div className="bg-green-600 w-96 h-3 m-4 rounded-sm"></div>
-                            <span className="text-gray-400 ">76 %</span>
+                    <div className="flex flex-col overflow-hidden  ">
+                        <div className="flex  items-center">
+                            <span className="text-gray-400 m-2 sm:m-4 rounded-sm">Buy</span>
+                            <div className="bg-green-600 w-16 h-3  sm:w-96 h-3 m-2 sm:m-4 rounded-sm"></div>
+                            <span className="text-gray-400 sm:ml-2">76%</span>
                         </div>
-                        <div className="flex items-center">
-                            <span className="text-gray-400  m-4 rounded-sm">Hold</span>
-                            <div className="bg-gray-500 w-8 h-3 m-3  rounded-sm"></div>
-                            <span className="text-gray-400  ">8%</span>
+                        <div className="flex  items-center">
+                            <span className="text-gray-400 m-2 sm:m-4 rounded-sm">Hold</span>
+                            <div className="bg-gray-500 w-4 h-3 mr-1 sm:m-3 sm:w-16 rounded-sm"></div>
+                            <span className="text-gray-400 sm:ml-2">8%</span>
                         </div>
-                        <div className="flex items-center">
-                            <span className="text-gray-400  m-4 rounded-sm">Sell</span>
-                            <div className="bg-red-500 w-32 h-3 m-5 rounded-sm"></div>
-                            <span className="text-gray-400 ">16%</span>
+                        <div className="flex  items-center">
+                            <span className="text-gray-400 m-2 sm:m-4 rounded-sm">Sell</span>
+                            <div className="bg-red-500 w-8 sm:w-32 h-3 m-2 sm:m-5 rounded-sm"></div>
+                            <span className="text-gray-400 sm:ml-2">16%</span>
                         </div>
                     </div>
-
-
                 </div>
 
             </div>
@@ -63,17 +63,17 @@ const Sentiments = () => {
 
 const Cart = ({ icon, title, description, bgColor, imgColor }) => {
     return (
-        <div className={`mt-4 m-2 lg:m-2 p-[18px] w-[400px] h-[220px]  flex flex-col rounded-[12px] ${bgColor}`}>
-           <div className={`w-[50px] h-[50px] m-2 rounded-full  ${imgColor}`}> 
-           <img
-           className={`w-[28px] h-[28px] m-2 `}
-           src={icon}
-           alt="icon"
-       />
-           </div>
-            <div className="ml-2  w-[300px]  flex  flex-col overflow-hidden text-left">
-                <div className=" w-[300px] h-[40px] text-[14px] line-height-[20px]  font-semibold">{title}</div>
-                <div className="text-[#3E5765] mb-2">{description}</div>
+        <div className={` min-w-[24em] p-4  flex justify-between  rounded-lg ${bgColor}`}>
+            <div className=' flex '>
+                <img
+                    className={` m-2  sm:p-1 w-4 h-4 sm:w-8 sm:h-8 sm:m-2  rounded-full ${imgColor}`}
+                    src={icon}
+                    alt="icon"
+                />
+            </div>
+            <div className="m-2  p-2 sm:p-0 sm:m-2 w-full flex flex-col text-left">
+                <div className="font-semibold">{title}</div>
+                <div className="text-gray-600">{description}</div>
             </div>
         </div>
     );

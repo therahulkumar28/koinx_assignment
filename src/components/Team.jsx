@@ -5,11 +5,11 @@ import team3 from '../images/team3.png'
 
 const TeamPage = () => {
     return (
-        <div className="  mt-8 bg-white p-2 shadow-md">
-            <div className='m-8'>
-            <h1 className='text-xl font-bold'>Team</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac libero pharetra dapibus. Integer eu nisl quis augue lobortis luctus id eget ipsum. Ut ac metus et ex varius lacinia non nec justo. Aenean feugiat orci auctor turpis convallis, non feugiat libero eleifend. Sed condimentum, nunc ut vestibulum suscipit, augue odio luctus tortor, vitae tincidunt arcu ligula vel odio</p> </div>
-           <div className='flex flex-col items-center'>
+        <div className=" p-4  sm:p-8 mt-8 bg-white  shadow-md">
+            <div className='mb-2'>
+            <h1 className='text-xl font-bold mb-2'>Team</h1>
+            <p className='mb-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo ac libero pharetra dapibus. Integer eu nisl quis augue lobortis luctus id eget ipsum. Ut ac metus et ex varius lacinia non nec justo. Aenean feugiat orci auctor turpis convallis, non feugiat libero eleifend. Sed condimentum, nunc ut vestibulum suscipit, augue odio luctus tortor, vitae tincidunt arcu ligula vel odio</p> </div>
+           <div className='flex flex-col items-center '>
            <Team
                 image={team1}
                 name="John Doe"
@@ -39,7 +39,7 @@ const TeamPage = () => {
 export default TeamPage;
 
 const Team = ({ image, name, designation, description }) => (
-    <div className="flex  flex-col items-center sm:flex-row sm:items-start  justify-between p-4 m-6 bg-blue-50  rounded-md shadow-md">
+    <div className="flex  flex-col items-center sm:flex-row sm:items-start  justify-between  p-4 mb-4 bg-blue-50  rounded-md shadow-md">
         <div className="flex mr-2 flex-col justify-center items-center w-32">
             <img src={image} alt="image..."  className="w-24 object-cover rounded-md" />
             

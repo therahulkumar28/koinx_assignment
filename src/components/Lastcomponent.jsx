@@ -28,7 +28,7 @@ function LastComponent() {
   };
 
   return (
-    <div className="bg-white h-max mt-10 p-14 relative">
+    <div className=" mt-1 sm:mt-3 bg-white h-max  p-14 relative">
       <div>
         <div className="text-[#202020] text-2xl font-semibold">
           You May Also Like

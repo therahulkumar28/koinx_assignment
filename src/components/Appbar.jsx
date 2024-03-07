@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-
+import koinx from '../images/koinx.png'
 const Appbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    setIsMobile(window.innerWidth <= 768); 
   };
 
   useEffect(() => {
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -22,8 +22,8 @@ const Appbar = () => {
   };
 
   const renderMobileNav = () => (
-    <div className="flex items-center space-x-4">
-      {/* Hamburger Icon */}
+    <div className="flex  items-center space-x-4 ">
+      
       <button
         type="button"
         className="text-black font-semibold focus:outline-none"
@@ -32,16 +32,16 @@ const Appbar = () => {
         &#9776;
       </button>
 
-      {/* Hidden Menu */}
+      
       {isMenuOpen && (
-        <div className="absolute top-full left-0 bg-white p-4 shadow-md">
-          <a href="#" className="block mb-2 text-black font-semibold">
+        <div className="flex justify-between absolute top-full right-0 bg-white p-4  shadow-md w-full">
+          <a href="#" className="block m-2 font-semibold">
             Crypto Taxes
           </a>
-          <a href="#" className="block mb-2 text-black font-semibold">
+          <a href="#" className="block m-2 font-semibold">
             Free Tools
           </a>
-          <a href="#" className="block mb-2 text-black font-semibold">
+          <a href="#" className="block m-2  font-semibold">
             Resource Center
           </a>
           <button
@@ -56,7 +56,7 @@ const Appbar = () => {
   );
 
   const renderDesktopNav = () => (
-    <div className="flex items-center space-x-4">
+    <div className="flex justify-between items-center space-x-4">
       <a href="#" className="text-black font-semibold">
         Crypto Taxes
       </a>
@@ -76,15 +76,15 @@ const Appbar = () => {
   );
 
   return (
-    <div className="bg-white  shadow-md p-4 relative">
+    <div className="flex bg-white  shadow-md p-4 relative">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center relative">
           <img
-            src="https://lh7-us.googleusercontent.com/TvLUwSeXBErDf9yMpa2BwEOFA8EKepuCaus1b6f-4Qzz3yv4O2YcPRhJu1R1NaTxiF4UH7a6lt8xW4TVlw6W2TIPCZY5_5eKgKRREthnlVtAQ4dEg1rVt5nNzAMSTkjr2rvTiit06ELjWHGGsEH_4Q"
+            src={koinx}
             alt="Crypto Taxes Logo"
             className="h-6 w-auto mr-2"
           />
-          <span className="absolute bottom-5 right-0 text-gray-500 text-xs font-bold">
+          <span className="absolute bottom-3 left-24z text-gray-500 text-xs font-bold">
             TM
           </span>
         </div>

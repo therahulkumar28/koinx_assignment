@@ -14,7 +14,7 @@ function App() {
   return (
     <div >
       <Appbar />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 p-4">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-3 p-4">
         <div className="col-span-2">
 
           <div className="flex full-width flex-col items-stretch">

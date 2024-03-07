@@ -34,7 +34,7 @@ const AboutBitcoin = () => {
       <p className="font-bold text-lg mb-4">
         Already Holding Bitcoin?
       </p>
-      <div className='flex flex-col m-0 md:flex-row justify-between p-2 md:m-2'>
+      <div className='flex flex-col m-0  md:flex-row justify-between p-2 md:m-2'>
         <Bitcoin
           image={bitcoinimage1}
           title="Calculate your Profits"
@@ -61,13 +61,13 @@ const AboutBitcoin = () => {
 
 const Bitcoin = ({ image, title, buttonName, backgroundColor }) => {
   return (
-    <div className={`flex justify-center items-center mb-3 md:m-2 rounded-md shadow-md ${backgroundColor} w-[410px] h-[155px] mr-2 relative`}>
-      <div className="w-full h-full">
-        <img src={image} alt="Bitcoin" className="w-[110px] h-[115px] absolute top-[16px] left-[10px] object-cover rounded-md" />
+    <div className={`flex w-full p-2 gap-x-4 justify-start mb-3 md:m-2 rounded-md shadow-md ${backgroundColor} lg:w-[410px] h-[155px]  relative`}>
+      <div className="flex h-full w-32">
+        <img src={image} alt="Bitcoin" className="w-full h-full object-cover  rounded-md" />
       </div>
-      <div className="flex flex-col justify-center items-center w-[180px] h-[104px] absolute top-[20px] left-[167px] gap-[16px]">
-        <h2 className="text-2xl font-semibold  text-left mb-1">{title}</h2>
-        <button className="bg-white lg:w-[120px] h-[32px] rounded-[8px] gap-[4px] p-1 font-semibold">{buttonName}</button>
+      <div className="flex h-full flex-col ">
+        <h2 className="text-1xl sm:text-2xl font-semibold  text-left mb-1">{title}</h2>
+        <button className="bg-white text-sm rounded-md m-1 max-w-fit px-4 p-2 font-semibold ">{buttonName}</button>
       </div>
     </div>
   );

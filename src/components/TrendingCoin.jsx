@@ -29,7 +29,7 @@ const TrendingCoins24h = () => {
   }, []); 
 
   return (
-    <div className="mt-5 m-4 p-4 bg-white rounded shadow-sm">
+    <div className=" mt-4 sm:mt-4  p-4 bg-white rounded shadow-sm">
       <h2 className="text-lg font-semibold mb-4">Trending Coins (24h)</h2>
       {trendingCoinsData.map((coin, index) => (
         <div key={index} className="flex justify-between items-center mb-2">
