@@ -94,7 +94,7 @@ function LastComponent() {
 }
 
 function CryptoCard({ cryptoData }) {
-  console.log("Sparkline URL:", cryptoData.data.sparkline);
+ 
 
   return (
     <div className="w-[300px] h-[200px] rounded-2xl p-5 border-2 m-2">
